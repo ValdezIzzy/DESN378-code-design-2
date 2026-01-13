@@ -24,6 +24,40 @@ This is my workspace for **DESN 378 Code + Design 2** also known as **Web Design
 
 Update this section each week with observations, breakthroughs, and questions.
 
+## Week 0
+​
+### What I Learned
+I learned about JavaScript this week. I learned some of the tags that are used, what strings are, integers, how to link it with HTML or do script in HTML as well as other integral things in order to utililze JavaScript to its full potential. I didn't know that JS was in charge of the behavioral aspects of a site so learning how to do the alerts and change the name in the header of the browser was fun and interesting.
+​
+​
+### What Was Hard
+There wasn't anything that was too difficult, yet. I guess the part where I had to copy and paste the code from Mozilla and alter it slightly to fit my specifications was difficult because there was advanced stuff that I didn't know how to do so it took longer to learn about what it was and then using the script for my assignment. It was also hard cropping the pictures down, but once I figured out how it was fine.
+​
+​
+### How I Used AI
+I believe I used ChatGPT albeit briefly in order to understand some of the JS code that I was inputting into my assignment as well as decerning the instructions which matched but had some discrepancies which I couldn't decipher, but maybe that was a me issue.
+​
+​
+### What's Still Unclear
+There is still stuff about JavaScript that I do not yet know like how to fully use it or find code that I can use and be able to alter it so it does what I want it to do. However, in terms of what I learned and it being clear or not, I feel like I am fine at this point since we are just starting so it isn't too bad yet.
+​
+​
+### Work Completed (Week 0)
+​
+**Engage**
+- [x] Portfolio Audit
+​
+**Learn**
+- [x] Console Explorer
+- [x] Codedex Console Fundamentals
+​
+**Reflect**
+- [x] Visual Notes: Variables and Strings
+​
+**Build**
+- [x] The Setup
+- [x] The Behavioral Layer
+
 ### Week 1: Systems That Respond
 *Coming soon...*
 
