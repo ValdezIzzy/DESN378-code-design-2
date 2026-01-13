@@ -24,8 +24,7 @@ This is my workspace for **DESN 378 Code + Design 2** also known as **Web Design
 
 Update this section each week with observations, breakthroughs, and questions.
 
-## Week 0
-​
+## Week 0​
 ### What I Learned
 I learned about JavaScript this week. I learned some of the tags that are used, what strings are, integers, how to link it with HTML or do script in HTML as well as other integral things in order to utililze JavaScript to its full potential. I didn't know that JS was in charge of the behavioral aspects of a site so learning how to do the alerts and change the name in the header of the browser was fun and interesting.
 ​
