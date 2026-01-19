@@ -17,14 +17,14 @@ let currentStep = 0;
 
 // Listen for clicks
 image.addEventListener('click', function() {
-  currentStep++;
+  if (currentStep < captions.length - 1) {
+    currentStep++;
 
-  if (currentStep < captions.length) {
     // Update caption
     caption.textContent = captions[currentStep];
 
     // Update image
-    image.src = `assets/images/image-${currentStep + 1}.jpg`;
+    image.src = `assets/images/story-image-${currentStep}.jpg`;
 
     // Update progress dots
     updateProgress(currentStep);

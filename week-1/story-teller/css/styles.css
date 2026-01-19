@@ -1,0 +1,32 @@
+#story-caption {
+    font-size: 3em;
+    font-weight: 600;
+    color: #2e2e2e;
+    margin-top: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: aqua;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 20px;
+
+    background-image: url("../assets/images/story-teller-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
