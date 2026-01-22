@@ -58,7 +58,44 @@ There is still stuff about JavaScript that I do not yet know like how to fully u
 - [x] The Behavioral Layer
 
 ### Week 1: Systems That Respond
-*Coming soon...*
+# Learning Log
+​
+## Week 1
+​
+### What I Learned
+<!-- What concepts clicked for you? What was new? -->
+This week, I learned more about design systems. They are an overarching umbrella that holds a lot of information about the foundational design elements of a site, project, ect. It should be used because it keeps things more organized, makes it easier if you are working with a team, and makes things simplier if you want cohesion and continuity.​
+​
+### What Was Hard
+<!-- What frustrated you? What didn't make sense? -->
+I would say the JavaScript for the Storytelling assignment was difficult for me because the JS had a whole bunch of things like the if and the querySelector that I wasn't quite comfortable with using yet. I don't know when exactly to use it and I also have trouble remembering the format of JS since I have to remember the formatting for HTML and CSS as well (I guess I don't have to, but it is taking up brain space).​
+​
+### How I Used AI
+<!-- Did you use Copilot, ChatGPT, etc.? How did it help or not help? -->
+During the troubles with the Storytelling assignment, I asked ChatGPT to better explain things to me and help with changing things according to my file names which didn't match up according to the code so I had to ask what was wrong, but easily made the change using Copilot.​
+​
+### What's Still Unclear
+<!-- What questions do you still have? What needs more practice? -->
+I would say that JS is still unclear for me at this moment because I need more practice and experience with it. I'm going to take the time and do that extra assignment to better understand the toggling using JavaScript and probably work with ChatGPT to further understand it. I wouldn't say I'm in a rough place understanding, more of a learning phase with subtle confusion but nothing I can't handle.
+
+### Work Completed (Week 1)
+
+**Engage**
+- [x] VS Code Theme Setup
+
+**Learn**
+- [x] Codedex.io Variables
+- [x] HTML Academy 
+
+**Practice**
+- [x] The Story Teller
+
+**Build**
+- [x] Portfolio Migration
+- [x] Portfolio in Figma + Style Tile
+
+**Reflect**
+- [x] Visual Notes: Week 1---
 
 ### Week 2: Remembering Choices
 *Coming soon...*
