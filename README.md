@@ -57,11 +57,7 @@ There is still stuff about JavaScript that I do not yet know like how to fully u
 - [x] The Setup
 - [x] The Behavioral Layer
 
-### Week 1: Systems That Respond
-# Learning Log
-​
-## Week 1
-​
+## Week 1: Systems That Respond​
 ### What I Learned
 <!-- What concepts clicked for you? What was new? -->
 This week, I learned more about design systems. They are an overarching umbrella that holds a lot of information about the foundational design elements of a site, project, ect. It should be used because it keeps things more organized, makes it easier if you are working with a team, and makes things simplier if you want cohesion and continuity.​
@@ -97,7 +93,7 @@ I would say that JS is still unclear for me at this moment because I need more p
 **Reflect**
 - [x] Visual Notes: Week 1---
 
-### Week 2: Remembering Choices
+## Week 2: Remembering Choices
 *Coming soon...*
 
 ---
