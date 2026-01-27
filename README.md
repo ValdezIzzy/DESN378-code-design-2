@@ -93,8 +93,41 @@ I would say that JS is still unclear for me at this moment because I need more p
 **Reflect**
 - [x] Visual Notes: Week 1---
 
-## Week 2: Remembering Choices
-*Coming soon...*
+## Week 2: Remembering Choices​
+### What I Learned
+<!-- What concepts clicked for you? What was new? -->
+I feel like a lot of the learning on Figma was pretty attainable for me. I understand the concept of variables really well because of utilizing them in CSS. After going through the JavaScript stuff again, the querySelector also makes more sense and the swapping of images through a click. While I won't be able to remember exactly how to do it, I understand it and how it could be used.​
+​
+### What Was Hard
+<!-- What frustrated you? What didn't make sense? -->
+The thing that was the most frustrating for me was making variables for something I had already made. It makes more sense to start out making variables and putting them into the designs (similar to styles) but it was another thing adding it to something I already created. Making the light and dark mode work correctly was such a hassle and I realize how many varables one would actually need to make a fully fledged system to actually work.​
+​
+### How I Used AI
+<!-- Did you use Copilot, ChatGPT, etc.? How did it help or not help? -->
+I did not end up using it a lot this time around because it was easier for me to understand and I knew what I was doing for the most part althought the process itself was difficult. ​
+​
+### What's Still Unclear
+<!-- What questions do you still have? What needs more practice? -->
+I feel like this past week wasn't too bad in terms of comprehension, but I'm sure I'll need further practice in using variables in Figma and naming tokens in JS.
+
+### Work Completed (Week 1)
+
+**Engage**
+- [x] VS Code Theme Setup
+
+**Learn**
+- [x] Codedex.io Conditionals
+- [x] figma variables
+
+**Practice**
+- [x] The Switch
+
+**Build**
+- [x] The Foundation
+- [x] Portfolio in Figma + Style Tile
+
+**Reflect**
+- [x] Visual Notes: Week 2---
 
 ---
 
