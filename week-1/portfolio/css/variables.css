@@ -1,0 +1,124 @@
+:root {
+  /* =========================
+     BRAND TOKENS (semantic)
+  ========================== */
+  --brandcolors__primary: #2f4f4f;
+  --brandcolors__secondary: #4b3b5a;
+  --brandcolors__accent: #003a74;
+  --brandcolors__lightaccent: #247ba0;
+  --brandcolors__action: #ff6b35;
+
+  /* Neutrals (semantic) – map to primitives */
+  --neutrals__surface: var(--gray-10);
+  --neutrals__text: var(--gray-90);
+  --neutrals__bg: var(--gray-80);
+
+  /* =========================
+     TYPOGRAPHY
+  ========================== */
+  --sizing__h1: 72px;
+  --sizing__h2: 48px;
+  --sizing__h3: 32px;
+  --sizing__h4: 20px;
+  --sizing__h5: 14px;
+
+  --fontfamily__primary: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fontfamily__secondary: "Open Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* =========================
+     SPACING
+  ========================== */
+  --space-xs: 8px;
+  --space-s: 16px;
+  --space-m: 20px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-xxl: 40px;
+  --space-xxxl: 56px;
+
+  /* =========================
+     COLOR PRIMITIVES (scales)
+     Use consistent naming: color-10...color-100
+  ========================== */
+
+  /* Teal / Primary */
+  --teal-10:  #e6ecec;
+  --teal-20:  #c4d2d2;
+  --teal-30:  #9fb6b6;
+  --teal-40:  #7a9a9a;
+  --teal-50:  #5c7d7d;
+  --teal-60:  #2f4f4f;
+  --teal-70:  #273f3f;
+  --teal-80:  #1f3030;
+  --teal-90:  #162121;
+  --teal-100: #0e1414;
+
+  /* Purple / Secondary */
+  --purple-10:  #ece9ef;
+  --purple-20:  #d1cbd8;
+  --purple-30:  #b4a9bf;
+  --purple-40:  #9787a6;
+  --purple-50:  #7a668d;
+  --purple-60:  #4b3b5a;
+  --purple-70:  #3d3048;
+  --purple-80:  #2f2437;
+  --purple-90:  #211927;
+  --purple-100: #140f18;
+
+  /* Navy / Accent */
+  --navy-10:  #e3ecf5;
+  --navy-20:  #b8cee6;
+  --navy-30:  #8aaed6;
+  --navy-40:  #5c8dc6;
+  --navy-50:  #2e6db6;
+  --navy-60:  #003a74;
+  --navy-70:  #002f5d;
+  --navy-80:  #002347;
+  --navy-90:  #001731;
+  --navy-100: #000c1c;
+
+  /* Light Blue / Light Accent */
+  --sky-10:  #e6f1f6;
+  --sky-20:  #c2dee8;
+  --sky-30:  #9ac9da;
+  --sky-40:  #73b4cc;
+  --sky-50:  #4b9fbe;
+  --sky-60:  #247ba0;
+  --sky-70:  #1e6482;
+  --sky-80:  #174e65;
+  --sky-90:  #103847;
+  --sky-100: #09222a;
+
+  /* Orange / Action */
+  --orange-10:  #ffe8df;
+  --orange-20:  #ffcbb8;
+  --orange-30:  #ffad8f;
+  --orange-40:  #ff8f66;
+  --orange-50:  #ff713d;
+  --orange-60:  #ff6b35;
+  --orange-70:  #e65a2c;
+  --orange-80:  #b84722;
+  --orange-90:  #8a3518;
+  --orange-100: #5c220e;
+
+  /* Grays (includes white & black) */
+  --gray-0:   #ffffff;
+  --gray-10:  #f4f4f4;
+  --gray-20:  #e0e0e0;
+  --gray-30:  #c6c6c6;
+  --gray-40:  #a8a8a8;
+  --gray-50:  #8a8a8a;
+  --gray-60:  #6b6b6b;
+  --gray-70:  #4d4d4d;
+  --gray-80:  #2a2a2a;
+  --gray-90:  #141414;
+  --gray-100: #000000;
+}
+
+
+body.light {
+  --gray-10: #000000;
+  --gray-80: #f4f4f4;
+  --gray-90: #e0e0e0;
+  --gray-100: #f4f4f4;
+}

@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 *,
 *::before,
 *::after {
@@ -18,16 +20,7 @@ main, body {
   overflow: visible;
 }
 
-:root {
-    --black: #000;
-    --white: #f4f4f4;
-    --gray: #2a2a2a;
-    --purple: #4b3b5a;
-    --green: #2f4f4f;
-    --dark-blue: #003a74;
-    --light-blue: #247ba0;
-    --orange: #ff6b35;
-}
+
 
 body::before {
   content: "";
@@ -36,10 +29,14 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--gray) url("../assets/images/BlackWhiteOverlay.jpg") center/cover no-repeat;
+  background: var(--gray-80) url("../assets/images/BlackWhiteOverlay.jpg") center/cover no-repeat;
   opacity: 1;
   pointer-events: none;
   z-index: -1;
+}
+
+body.light::before {
+  opacity: 0.30;
 }
 
 section > * {
@@ -48,33 +45,33 @@ section > * {
 }
 
 h1 {
-    font-family: "Montserrat";
+    font-family: var(--fontfamily__primary);
     font-weight: 700;
     font-size: 8rem;
-    color: var(--white);
+    color: var(--gray-10);
     text-align: center;
 }
 
 h2 {
-    font-family: "Montserrat";
+    font-family: var(--fontfamily__primary);
     font-weight: 700;
     font-size: 6.5rem;
-    color: var(--white);
+    color: var(--gray-10);
     margin-top: 4rem;
     margin-bottom: 0.5rem;
 }
 
 p {
-    font-family: "Open Sans";
+    font-family: var(--fontfamily__secondary);
     font-size: 2rem;
-    color: var(--white);
+    color: var(--gray-10);
     margin-left: 10rem;
     margin-right: 10rem;
 }
 
 small {
-    font-family: "Open Sans";
-    color: var(--black);
+    font-family: var(--fontfamily__secondary);
+    color: var(--gray-100);
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
@@ -82,7 +79,7 @@ small {
 }
 
 footer {
-    background-color: var(--white);
+    background-color: var(--gray-10);
     padding: 2rem 4rem;
     text-align: center;
 }
@@ -105,23 +102,23 @@ section {
 /* text colors */
 
 #about-font:hover {
-    color: var(--green);
+    color: var(--teal-60);
 }
 
 #recipe-font:hover {
-    color: var(--dark-blue);
+    color: var(--navy-60);
 }
 
 #tribute-font:hover {
-    color: var(--orange);
+    color: var(--orange-60);
 }
 
 #field-guide-font:hover {
-    color: var(--light-blue);
+    color: var(--sky-60);
 }
 
 #landing-page-font:hover {
-    color: var(--purple);
+    color: var(--purple-60);
 }
 
 #reflection-font {
@@ -138,7 +135,7 @@ section {
   top: 0;
   z-index: 1000;
   height: 65px;
-  background: var(--white);
+  background: var(--gray-10);
   box-shadow: 0 1px 6px rgba(0,0,0,0.35);
 }
 
@@ -164,9 +161,9 @@ section {
 }
 
 .nav-link {
-  font-family: "Open Sans";
+  font-family: var(--fontfamily__secondary);
   font-size: 1.75rem;
-  color: var(--black);
+  color: var(--gray-100);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
@@ -174,14 +171,14 @@ section {
 }
 
 .nav-link:hover {
-  color: var(--green);
+  color: var(--teal-60);
 }
 
 #nav-toggle {
   display: none;
   width: 44px;
   height: 44px;
-  background: var(--gray);
+  background: var(--gray-80);
   border-radius: 8px;
   padding: 6px;
   flex-direction: column;
@@ -194,7 +191,7 @@ section {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: var(--white);
+  background-color: var(--gray-10);
   border-radius: 2px;
 }
 
@@ -206,7 +203,7 @@ section {
 .my-rectangle {
     width: 800px;
     height: 15px;
-    background-color: var(--white);
+    background-color: var(--gray-10);
 }
 
 #about-rectangle,
@@ -221,11 +218,11 @@ section {
   margin-left: auto;
 }
 
-#about-rectangle        { background-color: var(--green);      }
-#recipe-rectangle       { background-color: var(--dark-blue);  }
-#tribute-rectangle      { background-color: var(--orange);     }
-#field-guide-rectangle  { background-color: var(--light-blue); }
-#landing-page-rectangle { background-color: var(--purple);     }
+#about-rectangle        { background-color: var(--teal-60);      }
+#recipe-rectangle       { background-color: var(--navy-60);  }
+#tribute-rectangle      { background-color: var(--orange-60);     }
+#field-guide-rectangle  { background-color: var(--sky-60); }
+#landing-page-rectangle { background-color: var(--purple-60);     }
 
 
 
@@ -273,7 +270,7 @@ section {
 .brick-wall {
   position: absolute;
   inset: 0;
-  background: var(--gray);
+  background: var(--gray-80);
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -295,7 +292,7 @@ section {
 .brick {
   flex: 0 0 450px;
   height: 170px;
-  background: var(--black);
+  background: var(--gray-100);
   border-radius: 15px;
   transition: background 0.25s ease;
 }
@@ -303,17 +300,17 @@ section {
 /* Hover colors */
 .brick:hover { cursor: pointer; }
 
-.brick:nth-child(5n + 1):hover { background: var(--green); }
-.brick:nth-child(5n + 2):hover { background: var(--purple); }
-.brick:nth-child(5n + 3):hover { background: var(--dark-blue); }
-.brick:nth-child(5n + 4):hover { background: var(--orange); }
-.brick:nth-child(5n + 5):hover { background: var(--light-blue); }
+.brick:nth-child(5n + 1):hover { background: var(--teal-60); }
+.brick:nth-child(5n + 2):hover { background: var(--purple-60); }
+.brick:nth-child(5n + 3):hover { background: var(--navy-60); }
+.brick:nth-child(5n + 4):hover { background: var(--orange-60); }
+.brick:nth-child(5n + 5):hover { background: var(--sky-60); }
 
 /* Hero text */
 .hero-content {
   position: relative;
   z-index: 3;
-  color: var(--white);
+  color: var(--gray-10);
 }
 
 .hero-content h1 {
@@ -361,7 +358,7 @@ footer img {
 
 .footer-intro {
   font-size: 2rem;
-  color: var(--black);
+  color: var(--gray-100);
   margin: 0 auto;
 }
 
@@ -381,14 +378,14 @@ footer img {
 .footer-disclaimer {
   max-width: 900px;
   margin: 0 auto;
-  color: var(--black);
+  color: var(--gray-100);
   line-height: 1.5;
 }
 
 .footer-copyright {
   display: block;
   margin-top: 1rem;
-  color: var(--black);
+  color: var(--gray-100);
 }
 
 .decor-brick {
@@ -518,12 +515,12 @@ footer img {
 
   #nav-toggle {
   display: flex;
-  background: var(--white);
+  background: var(--gray-10);
   border: none;
 }
 
 #nav-toggle span {
-  background: var(--black); 
+  background: var(--gray-100); 
 }
 
 #nav-bar ul {
@@ -537,12 +534,12 @@ footer img {
   gap: 1rem;
   margin-top: 1rem;
   padding: 1rem;
-  background-color: var(--white);
+  background-color: var(--gray-10);
 }
 
 #nav-bar.open ul li a {
   font-size: 1.5rem;
-  color: var(--black);
+  color: var(--gray-100);
 }
 
   section img {

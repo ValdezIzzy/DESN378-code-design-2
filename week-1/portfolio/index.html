@@ -95,6 +95,7 @@
 
 
 <main>
+  <button class="theme-toggle">Toggle Theme</button>
     <section id="about-section">
         <h2 id="about-font">About Me</h2>
         <div class="my-rectangle" id="about-rectangle"></div>
@@ -165,13 +166,15 @@
 </footer>
 
 <script>
-  const toggle = document.getElementById("nav-toggle");
+  const navToggle = document.getElementById("nav-toggle");
   const navBar = document.getElementById("nav-bar");
 
-  toggle.addEventListener("click", () => {
+  navToggle.addEventListener("click", () => {
     navBar.classList.toggle("open");
   });
 </script>
+
+<script src="javascript/script.js"></script>
 
 </body>
 </html>

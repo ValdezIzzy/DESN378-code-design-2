@@ -1,0 +1,187 @@
+/* Collection name: color */
+/* Mode: Mode 1 */
+:root {
+  --brand-purple-50: #af36ff;
+  --brand-green-bg: #00ffae;
+  --bg-80: #9e9e9e;
+  --bg-50: #bfbdbd;
+  --primary-50: #2d85c4;
+}
+
+/* Collection name: spacing */
+/* Mode: Mode 1 */
+:root {
+  --xs: 8;
+  --s: 16;
+  --m: 24;
+  --l: 32;
+  --xl: 40;
+  --xxl: 56;
+  --xxxl: 72;
+}
+
+/* Collection name: Brand Colors */
+/* Mode: light */
+body.light {
+  --brand-primary-20: #f89344;
+  --brand-primary-50: var(--red-red-50);
+  --brand-secondary-50: #2d85c4;
+  --neutrals-neutral-90: var(--grey-grey-80);
+  --neutrals-neutral-10: #f1f1f1;
+  --neutrals-neutral-00: #ffffff;
+}
+
+/* Collection name: Brand Colors */
+/* Mode: dark */
+body.dark {
+  --brand-primary-20: #f89344;
+  --brand-primary-50: var(--red-red-50);
+  --brand-secondary-50: #2d85c4;
+  --neutrals-neutral-90: #ffffff;
+  --neutrals-neutral-10: #646363;
+  --neutrals-neutral-00: #292929;
+}
+
+/* Collection name: Navigation */
+/* Mode: English */
+:root {
+  --nav-1: about;
+  --nav-2: work;
+  --nav-3: blog;
+  --nav-4: news;
+  --nav-button: Subscribe;
+  --size: 1440;
+  --newsletter: true;
+}
+
+/* Collection name: Navigation */
+/* Mode: German */
+:root {
+  --nav-1: Uber mich;
+  --nav-2: arbeiten;
+  --nav-3: blog;
+  --nav-4: neues;
+  --nav-button: Abonieren;
+  --size: 1440;
+  --newsletter: false;
+}
+
+/* Collection name: Navigation */
+/* Mode: Spanish */
+:root {
+  --nav-1: sobre mi;
+  --nav-2: trabajos;
+  --nav-3: blog;
+  --nav-4: noticias;
+  --nav-button: Suscribir;
+  --size: 1440;
+  --newsletter: true;
+}
+
+/* Collection name: _color-primitives */
+/* Mode: Mode 1 */
+:root {
+  --grey-grey-00: #ffffff;
+  --grey-grey-10: #dddddd;
+  --grey-grey-20: #aeaeae;
+  --grey-grey-30: #828282;
+  --grey-grey-40: #646464;
+  --grey-grey-50: #292929;
+  --grey-grey-60: #212121;
+  --grey-grey-70: #191919;
+  --grey-grey-80: #101010;
+  --grey-grey-90: #000000;
+  --red-red-10: #fce1d7;
+  --red-red-20: #f9c4af;
+  --red-red-30: #f7a688;
+  --red-red-40: #f58a62;
+  --red-red-50: #f46f3f;
+  --red-red-60: #c45932;
+  --red-red-70: #944325;
+  --red-red-80: #652d19;
+}
+
+/* Collection name: Typography */
+/* Mode: Mode 1 */
+:root {
+  --text-size-font-size-s: 16;
+  --text-size-font-size-m: 24;
+  --text-size-font-size-l: 32;
+  --text-size-font-size-xl: 40;
+  --text-weight-font-weight-default: regular;
+  --text-weight-font-weight-heavy: bold;
+  --font-family-font-family: Poppins;
+}
+
+
+
+
+
+
+.color{
+  --brand__purple50:#af36ff;
+  --brand__greenbg:#00ffae;
+  --bg__80:#9e9e9e;
+  --bg__50:#bfbdbd;
+  --primary__50:#2d85c4;
+}
+.spacing{
+  --XS:8;
+  --S:16;
+  --M:24;
+  --L:32;
+  --XL:40;
+  --XXL:56;
+  --XXXL:72;
+}
+.Brand Colors{
+  --Brand__primary20:#f89344;
+  --Brand__primary50:var(--red/red-50);
+  --Brand__secondary50:#2d85c4;
+  --Neutrals__neutral90:var(--grey/grey-80);
+  --Neutrals__neutral10:#f1f1f1;
+  --Neutrals__neutral00:#ffffff;
+}
+.Navigation{
+  --Nav1:about;
+  --Nav2:work;
+  --Nav3:blog;
+  --Nav4:news;
+  --NavButton:Subscribe;
+  --Size:1440;
+  --Newsletter:true;
+}
+._color-primitives{
+  --grey__grey00:#ffffff;
+  --grey__grey10:#dddddd;
+  --grey__grey20:#aeaeae;
+  --grey__grey30:#828282;
+  --grey__grey40:#646464;
+  --grey__grey50:#292929;
+  --grey__grey60:#212121;
+  --grey__grey70:#191919;
+  --grey__grey80:#101010;
+  --grey__grey90:#000000;
+  --red__red10:#fce1d7;
+  --red__red20:#f9c4af;
+  --red__red30:#f7a688;
+  --red__red40:#f58a62;
+  --red__red50:#f46f3f;
+  --red__red60:#c45932;
+  --red__red70:#944325;
+  --red__red80:#652d19;
+}
+.Typography{
+  --textsize__fontsizeS:16;
+  --textsize__fontsizeM:24;
+  --textsize__fontsizeL:32;
+  --textsize__fontsizeXL:40;
+  --textweight__fontweightdefault:regular;
+  --textweight__fontweightheavy:bold;
+  --fontfamily__fontfamily:Poppins;
+}
+
+
+
+
+
