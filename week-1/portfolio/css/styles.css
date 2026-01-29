@@ -33,10 +33,15 @@ body::before {
   opacity: 1;
   pointer-events: none;
   z-index: -1;
+  transition: opacity 0.3s ease;
 }
 
-body.light::before {
-  opacity: 0.30;
+html[data-theme="light"] body::before {
+  opacity: 0.50;
+}
+
+html[data-theme="dark"] body::before {
+  opacity: 1;
 }
 
 section > * {

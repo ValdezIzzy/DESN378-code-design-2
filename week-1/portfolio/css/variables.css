@@ -116,9 +116,16 @@
 }
 
 
-body.light {
+html[data-theme="light"] {
   --gray-10: #000000;
   --gray-80: #f4f4f4;
   --gray-90: #e0e0e0;
   --gray-100: #f4f4f4;
+}
+
+html[data-theme="dark"] {
+  --gray-10: #f4f4f4;
+  --gray-80: #2a2a2a;
+  --gray-90: #141414;
+  --gray-100: #000000;
 }
