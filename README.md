@@ -16,7 +16,7 @@ This is my workspace for **DESN 378 Code + Design 2** also known as **Web Design
 
 | # | Project | Focus | Status |
 |---|---------|-------|--------|
-| 1 | The System | Design tokens + theme switching | 🔲 |
+| 1 | The System | Design tokens + theme switching | [x] |
 
 ---
 
@@ -128,6 +128,46 @@ I feel like this past week wasn't too bad in terms of comprehension, but I'm sur
 
 **Reflect**
 - [x] Visual Notes: Week 2---
+
+## Week 3
+​
+### What I Learned
+<!-- Design tokens, state vs appearance, system preference, persistence -->
+I learned a lot about system preferences and persistence especially when it comes to light and dark modes. I learned a lot of JavaScript and what is required in order to have a successful toggle that changes the theme as well as being able to save preferences or go into the user's system to find their personal preference. I also did a reading on SVG's which reminded me heavily of high school math which shouldn't big too big of an issue for me, but then again it is difficult to imagine placement without seeing what it looks like.​
+​
+### What Was Hard
+<!-- What broke, confused you, or took time to understand -->
+It took a bit of time to understand the JavaScript and how the toggle works fundamentally so it was a very confusing time since it took a lot of brain power to comprehend what certain things meant such as the dataset and localStorage especially.​
+​
+### How I Used AI
+<!-- Copilot, ChatGPT, etc. What you asked and why -->
+I don't think I used a lot of AI, maybe a little to format my code and get things working properly but that wasn't to do it for me it was to ask about issues and I would troubleshoot it personally.​
+​
+### What's Still Unclear
+<!-- Questions that remain -->
+I wouldn't say anything in particular remains unclear, maybe the matchMedia which was just introduced but after I implement it I'm sure it won't be too big of an issue. Same thing in regards to SVG's considering I haven't implemented them in anything yet.
+
+### Work Completed (Week 3)
+
+**Design Tokens**
+- [x] variables.css exists
+- [x] Color tokens defined
+- [x] Typography tokens defined
+- [x] Spacing tokens defined
+- [x] Tokens used in CSS (no hardcoded values)
+
+**Theme System**
+- [x] Uses data-theme on <html>
+- [x] Toggle feedback is immediate
+
+**Persistence & Preference**
+- [x] Theme saved to localStorage
+- [x] Theme persists on refresh
+- [x] System preference used on first visit
+
+**Deployment**
+- [x] Deployed to GitHub Pages
+- [x] Repository is public​
 
 ---
 
