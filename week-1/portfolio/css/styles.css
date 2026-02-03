@@ -85,7 +85,7 @@ small {
 
 footer {
     background-color: var(--gray-10);
-    padding: 2rem 4rem;
+    padding: var(--footer-padding);
     text-align: center;
 }
 
@@ -94,7 +94,7 @@ a {
 }
 
 section {
-  margin-bottom: 12rem;
+  margin-bottom: var(--margin-section);
   position: relative;
 }
 
@@ -139,25 +139,25 @@ section {
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 65px;
+  height: var(--nav-height);
   background: var(--gray-10);
   box-shadow: 0 1px 6px rgba(0,0,0,0.35);
 }
 
 .nav-inner {
-  max-width: 1200px;
+  max-width: var(--section-max-width);
   margin: 0 auto;
-  padding: 0.5rem 1rem;
+  padding: var(--nav-padding);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: var(--nav-gap);
 }
 
 #nav-bar ul {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: var(--nav-list-gap);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -167,7 +167,7 @@ section {
 
 .nav-link {
   font-family: var(--fontfamily__secondary);
-  font-size: 1.75rem;
+  font-size: var(--nav-font-size);
   color: var(--gray-100);
   text-decoration: none;
   font-weight: 600;
@@ -181,11 +181,11 @@ section {
 
 #nav-toggle {
   display: none;
-  width: 44px;
-  height: 44px;
+  width: var(--nav-toggle-size);
+  height: var(--nav-toggle-size);
   background: var(--gray-80);
-  border-radius: 8px;
-  padding: 6px;
+  border-radius: var(--nav-toggle-border-radius);
+  padding: var(--nav-toggle-padding);
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -206,20 +206,20 @@ section {
 
 /* rectangle settings */
 .my-rectangle {
-    width: 800px;
-    height: 15px;
+    width: var(--rectangle-width);
+    height: var(--rectangle-height);
     background-color: var(--gray-10);
 }
 
 #about-rectangle,
 #tribute-rectangle,
 #landing-page-rectangle {
-  margin-left: 10rem;
+  margin-left: var(--margin-large);
 }
 
 #recipe-rectangle,
 #field-guide-rectangle {
-  margin-right: 10rem;
+  margin-right: var(--margin-large);
   margin-left: auto;
 }
 
@@ -234,7 +234,7 @@ section {
 
 /* alignment by section */
 #about-font {
-    margin-left: 10rem;
+    margin-left: var(--margin-large);
 }
 
 #recipe-section {
@@ -242,11 +242,11 @@ section {
 }
 
 #recipe-font {
-    margin-right: 10rem;
+    margin-right: var(--margin-large);
 }
 
 #tribute-font {
-    margin-left: 10rem;
+    margin-left: var(--margin-large);
 }
 
 #field-guide-section {
@@ -254,11 +254,11 @@ section {
 }
 
 #field-guide-font {
-    margin-right: 10rem;
+    margin-right: var(--margin-large);
 }
 
 #landing-page-font {
-    margin-left: 10rem;
+    margin-left: var(--margin-large);
 }
 
 
@@ -278,13 +278,13 @@ section {
   background: var(--gray-80);
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 32px 0;
+  gap: var(--brick-wall-gap);
+  padding: var(--brick-wall-padding);
 }
 
 .brick-row {
   display: flex;
-  gap: 32px;
+  gap: var(--brick-gap);
 
   width: 130vw;
   margin-left: -15vw;
@@ -295,10 +295,10 @@ section {
 }
 
 .brick {
-  flex: 0 0 450px;
-  height: 170px;
+  flex: 0 0 var(--brick-width);
+  height: var(--brick-height);
   background: var(--gray-100);
-  border-radius: 15px;
+  border-radius: var(--brick-border-radius);
   transition: background 0.25s ease;
 }
 
@@ -329,11 +329,11 @@ section img {
   margin-right: auto;
   max-width: 80%;
   height: auto;
-  margin-top: 8rem;
+  margin-top: var(--img-margin-top);
 }
 
 section img:hover {
-  transform: translateY(-10px);
+  transform: translateY(var(--img-hover-translate));
 }
 
 footer img {
@@ -371,11 +371,11 @@ footer img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem; 
+  gap: var(--footer-icons-gap); 
 }
 
 .footer-icons img {
-  width: 90px;
+  width: var(--footer-icon-size);
   height: auto;
   display: block;
 }
@@ -401,8 +401,8 @@ footer img {
 
 .decor-brick.brick {
   flex: none;
-  width: 360px;
-  height: 170px;
+  width: var(--decor-brick-width);
+  height: var(--brick-height);
 }
 
 
@@ -439,7 +439,7 @@ footer img {
   }
 
   section {
-    margin-bottom: 6rem;
+    margin-bottom: var(--margin-section-mobile);
     text-align: left; 
   }
 
@@ -459,8 +459,8 @@ footer img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px 0;
-    gap: 0;                          
+    padding: var(--brick-wall-padding-mobile);
+    gap: var(--brick-wall-gap-mobile);                          
   }
 
   .brick-row {
@@ -468,13 +468,13 @@ footer img {
     margin-left: -60vw;
     display: flex;
     justify-content: center;
-    gap: 28px;
+    gap: var(--brick-gap-mobile);
   }
 
   .brick {
-    flex: 0 0 360px;
-    height: 150px;
-    border-radius: 16px;
+    flex: 0 0 var(--brick-width-mobile);
+    height: var(--brick-height-mobile);
+    border-radius: var(--brick-border-radius-mobile);
   }
 
   .hero-content {
@@ -558,13 +558,13 @@ footer img {
   }
 
   .brick {
-    flex: 0 0 260px;
-    height: 120px;
+    flex: 0 0 var(--brick-width-tablet);
+    height: var(--brick-height-tablet);
   }
 
   /* footer */
   footer {
-    padding: 2rem 1.5rem;
+    padding: var(--footer-padding-mobile);
     text-align: left;
   }
 
@@ -581,12 +581,12 @@ footer img {
 
   #footer-imgs {
     justify-content: flex-start;
-    gap: 1.5rem;
-    margin: 1.5rem 1.5rem;
+    gap: var(--footer-icons-gap-mobile);
+    margin: var(--footer-icons-gap-mobile);
   }
 
   footer img {
-    width: 90px;
+    width: var(--footer-icon-size);
   }
 
   .footer-disclaimer,
@@ -595,5 +595,12 @@ footer img {
     font-size: 0.9rem;
     margin: 0 1.5rem;
     text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
   }
 }

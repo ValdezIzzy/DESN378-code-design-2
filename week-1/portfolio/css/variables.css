@@ -37,6 +37,54 @@
   --space-xxxl: 56px;
 
   /* =========================
+     SIZING & LAYOUT
+  ========================== */
+  --nav-height: 65px;
+  --nav-padding: 0.5rem 1rem;
+  --nav-gap: 2rem;
+  --nav-list-gap: 3rem;
+  --nav-font-size: 1.75rem;
+  --nav-toggle-size: 44px;
+  --nav-toggle-border-radius: 8px;
+  --nav-toggle-padding: 6px;
+  
+  --rectangle-width: 800px;
+  --rectangle-height: 15px;
+  
+  --margin-large: 10rem;
+  --margin-medium: 8rem;
+  --margin-section: 12rem;
+  --margin-section-mobile: 6rem;
+  
+  --section-max-width: 1200px;
+  
+  --brick-gap: 32px;
+  --brick-gap-mobile: 28px;
+  --brick-width: 450px;
+  --brick-width-mobile: 360px;
+  --brick-width-tablet: 260px;
+  --brick-height: 170px;
+  --brick-height-mobile: 150px;
+  --brick-height-tablet: 120px;
+  --brick-border-radius: 15px;
+  --brick-border-radius-mobile: 16px;
+  --brick-wall-gap: 15px;
+  --brick-wall-gap-mobile: 0;
+  --brick-wall-padding: 32px 0;
+  --brick-wall-padding-mobile: 15px 0;
+  
+  --decor-brick-width: 360px;
+  
+  --footer-padding: 2rem 4rem;
+  --footer-padding-mobile: 2rem 1.5rem;
+  --footer-icons-gap: 4rem;
+  --footer-icons-gap-mobile: 1.5rem;
+  --footer-icon-size: 90px;
+  
+  --img-margin-top: 8rem;
+  --img-hover-translate: -10px;
+
+  /* =========================
      COLOR PRIMITIVES (scales)
      Use consistent naming: color-10...color-100
   ========================== */
