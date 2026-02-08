@@ -604,3 +604,27 @@ footer img {
     animation: none !important;
   }
 }
+
+
+
+.wick {
+  stroke: var(--gray-40);
+  stroke-linecap: round;
+}
+
+.theme-icon:hover {
+  transform: scale(1.08);
+}
+
+.theme-menu {
+  display: none;
+}
+
+.theme-dropdown.open .theme-menu {
+  display: block;
+}
+
+.theme-dropdown button{
+  background-color: var(--gray-80);
+  color: var(--gray-10);
+}

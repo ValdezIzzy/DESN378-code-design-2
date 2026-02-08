@@ -18,3 +18,16 @@ There is also an issue with the icons when the sight is in light mode which appl
 - ChatGPT
 
 (both for questions and troubleshooting)
+
+
+
+### Theme Dropdown Reflection
+
+- Icon Design
+I was really happy with the idea that I came up with for my icon svg designs. It was discussed in class that a sun and moon are very common and pretty overused so you would like if we came up with a new idea. Because my portfolio is design to look edgy and street, I thought making icons that were edgy as well would tie greatly into the theme. I created a bomb for my dark mode, a lit wick for my system settings, and an explosion for the light mode. For the dark mode, a bomb is black and has dark connotations surrounding it usually. For the light mode, an explosion causes a big flash of light which matches with the very bright white light mode I designed for the site. As for the system, it was a place in between the two, showing it could go either way according to the individual user's system preferences.
+
+- System Logic
+The code handles system differently because it goes into the user's actual system that they are using, in my case my laptop. If I were to click system on my portfolio, it would be dark mode because that is my computer's preference that I set. It is different than simply changing the theme from light and dark because it looks for those user preferences using the event listener.
+
+- Unexpected Learning
+As I was creating the SVG's in codepen, I didn't realize the graphing system very well but once I started playing with the different points, expecially using the polygon attribute, I figured out the graph more and made some really cool SVG's in the process which I didn't have too high of hopes for.

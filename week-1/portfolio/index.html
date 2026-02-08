@@ -95,7 +95,145 @@
 
 
 <main>
-  <button class="theme-toggle">Toggle Theme</button>
+  <div class="theme-dropdown">
+
+
+    
+  <button class="theme-trigger">
+    <svg width="24"
+     height="24"
+     viewBox="0 0 24 24"
+     class="theme-icon">
+  <circle 
+         cx="12" 
+         cy="14" 
+         r="6" 
+         fill="black"
+  />
+  <rect
+        x="10"
+        y="7"
+        width="4"
+        height="3"
+        fill="black"
+  />
+  <line
+        class="wick"
+        x1="12.25"
+        y1="6.75"
+        x2="12"
+        y2="3"
+  />
+</svg>
+    <span>Theme</span>
+  </button>
+<div class="theme-menu">
+    <button data-theme="dark">
+      <svg width="24"
+     height="24"
+     viewBox="0 0 24 20"
+     class="theme-icon">
+  <circle 
+         cx="12" 
+         cy="14" 
+         r="6" 
+         fill="black"
+  />
+  <rect
+        x="10"
+        y="7"
+        width="4"
+        height="3"
+        fill="black"
+  />
+  <line
+        class="wick"
+        x1="12.25"
+        y1="6.75"
+        x2="12"
+        y2="3"
+  />
+</svg>
+      <span>Dark</span>
+    </button>
+
+
+    
+        <button data-theme="system">
+      <svg width="24"
+     height="24"
+     viewBox="0 -5 24 24"
+     class="theme-icon">
+    <line
+        class="wick"
+        x1="15"
+        y1="14"
+        x2="21"
+        y2="25"
+        stroke-width="2.75"
+  />
+  <line
+        stroke-linecap="butt"
+        stroke="black"
+        x1="15"
+        y1="14"
+        x2="11"
+        y2="9"
+        stroke-width="2.75"
+  />
+  <polygon
+        stroke-width="1"
+        stroke-linecap="round"
+        fill="#ff6b35"
+        points="
+          9 9 
+          10 17
+          12 9
+          18 8
+          12 6
+          11 -2
+          9 6
+          2 7" 
+                 />
+</svg>
+      <span>OS default</span>
+    </button>
+  
+    <button data-theme="light">
+      <svg width="24"
+     height="24"
+     viewBox="0 0 24 24"
+     class="theme-icon">
+    <polygon
+        stroke-width="1"
+        stroke-linecap="round"
+        fill="#ff6b35"
+        points=
+          "12,1.5
+           13.6,5.8
+           18.8,3.6
+           16.2,8.4
+           22.5,10.8
+           16.8,12.6
+           20.5,18.6
+           14.6,16
+           13.2,22.7
+           10.6,16.4
+           4.2,19.6
+           6.8,13.8
+           1.3,12
+           6.6,9.6
+           3.2,4.6
+           9.4,6.4"
+   />
+</svg>
+      <span>Light</span>
+    </button>
+
+  </div>
+</div>
+    
+  
     <section id="about-section">
         <h2 id="about-font">About Me</h2>
         <div class="my-rectangle" id="about-rectangle"></div>
