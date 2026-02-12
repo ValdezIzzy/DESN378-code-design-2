@@ -167,7 +167,42 @@ I wouldn't say anything in particular remains unclear, maybe the matchMedia whic
 
 **Deployment**
 - [x] Deployed to GitHub Pages
-- [x] Repository is public​
+- [x] Repository is public
+
+## Week #4
+​
+### What I Learned
+<!-- SVG's, dropdown, svg paths -->
+I learned even more about SVG's, especially more nuanced stuff about paths. There are many things you can do with paths, but there is a lot of math involved since everything is on a grid. I also learned about dropdowns and how I can use them for theme changes.​
+​
+### What Was Hard
+<!-- What broke, confused you, or took time to understand -->
+The lines when I was making my own SVG's was pretty tough to do because it's hard to visualize things and keep things in order when you are starting from scratch. I also thought paths was fairly confusing, but they are both similar so I'm sure with time and practice it'll be fine. ​
+​
+### How I Used AI
+<!-- Copilot, ChatGPT, etc. What you asked and why -->
+I used ChatGPT to teach me how to do the dropdown. I had it walk me through how everything works and while I still wouldn't be able to do it on my own, I understand how it functions and that's what matters.​
+​
+### What's Still Unclear
+<!-- Questions that remain -->
+I don't think I have questions at this point or at least not any in particular.​
+​
+### Work Completed (Week 4)​
+
+**Reflect**
+- [x] Week 4 Visual Notes
+- [x] Learning Log Week 3
+
+**Practice**
+- [x] SVG tutorial
+- [x] All ten are made
+- [x] Added style differences
+- [x] SVG anatomy
+- [x] Create working, theme-responsive bookmark in CodePen
+
+**Build**
+- [x] The Mark
+- [x] Figma blueprint and inline code
 
 ---
 
