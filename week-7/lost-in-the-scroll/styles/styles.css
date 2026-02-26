@@ -1,0 +1,114 @@
+/* ------------------------------
+  GLOBAL / LAYOUT TOKENS
+  (these can live here or in variables.css)
+--------------------------------- */
+:root {
+  /* layout */
+  --container-max: 980px;
+
+  /* chapter layout */
+  --chapter-gap: var(--space-16);
+  --chapter-row-1: 280px;
+  --chapter-row-2: 160px;
+  --chapter-row-3: 360px;
+
+  /* borders */
+  --border-width: 2px;
+}
+
+/* ----- baseline ----- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+main {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-32) var(--space-24) var(--space-48);
+
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  color: var(--text-primary);
+  background: var(--surface-primary);
+}
+
+.section__content h1,
+.section__content h2,
+.section__content h4,
+.section__content h5 { margin: 0; }
+
+/* ----- hero (title area) ----- */
+.section--hero .section__content { margin-bottom: var(--space-24); }
+
+.section--hero h1 {
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.section--hero h5 {
+  margin-top: var(--space-8);
+  font-size: var(--size-small);
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+/* ----- chapter layout (GRID) ----- */
+.section--chapter .section__content {
+  display: grid;
+  gap: var(--chapter-gap);
+
+  grid-template-columns: 2fr 2fr 1.5fr;
+  grid-template-rows: var(--chapter-row-1) var(--chapter-row-2) var(--chapter-row-3);
+
+  grid-template-areas:
+    "big big web1"
+    "big big web2"
+    "story code css";
+}
+
+/* panel look */
+.section--chapter .panel {
+  border: var(--border-width) solid var(--text-primary);
+  background: var(--surface-primary);
+  padding: var(--space-32);
+
+  /* centers text inside each panel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* typography inside panels */
+.section--chapter h2 {
+  font-size: clamp(28px, 3.2vw, 44px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  line-height: 1.05;
+  color: var(--text-primary);
+}
+
+.section--chapter h4 {
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+.section--chapter h5 {
+  font-size: clamp(14px, 1.6vw, 18px);
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--text-primary);
+}
+
+/* map existing HTML order to the grid areas */
+.section--chapter .panel:nth-child(1){ grid-area: big; }
+.section--chapter .panel:nth-child(2){ grid-area: web1; }
+.section--chapter .panel:nth-child(3){ grid-area: web2; }
+.section--chapter .panel:nth-child(4){ grid-area: code; }
+.section--chapter .panel:nth-child(5){ grid-area: css; }
+.section--chapter .panel:nth-child(6){ grid-area: story; }
