@@ -49,27 +49,71 @@ html, body {
   padding: var(--space-32) var(--space-24);
 }
 
-.section--chapter { margin-top: var(--space-128); }
+/* ==============================
+   SECTION SPACING SYSTEM
+   ============================== */
 
-/* ----- hero (title area) ----- */
-.section--hero .section__content { margin-bottom: var(--space-24); }
+/* default: 300px between chapters */
+:root{
+  --space-between-chapters: 300px;
+  --space-hero-to-ch1: 48px; /* magazine-like tight spacing */
+}
 
-.section--hero h1 {
-  font-size: clamp(40px, 5vw, 56px);
+/* all chapters get 300px above them */
+.section--chapter{
+  margin-top: var(--space-between-chapters);
+}
+
+/* BUT hero → chapter 1 should be tight */
+#chapter-1{
+  margin-top: var(--space-hero-to-ch1);
+}
+
+/* Base panel look (safe for every chapter) */
+.section--chapter .panel{
+  border: var(--border-width) solid var(--text-primary);
+  background: var(--surface-primary);
+  padding: var(--space-32);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Base typography (safe for every chapter) */
+.section--chapter h2{
+  font-size: clamp(28px, 3.2vw, 44px);
   font-weight: 900;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  line-height: 1.05;
+  color: var(--text-primary);
 }
 
-.section--hero h5 {
-  margin-top: var(--space-8);
-  font-size: var(--size-small);
+.section--chapter h4{
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+.section--chapter h5{
+  font-size: clamp(14px, 1.6vw, 18px);
   font-weight: 500;
-  color: var(--text-secondary);
+  line-height: 1.35;
+  color: var(--text-primary);
 }
 
-/* ----- chapter layout (GRID) ----- */
-.section--chapter .section__content {
+
+
+
+
+/* ==============================
+   CHAPTER 1 — (scoped layout)
+   ============================== */
+
+#chapter-1 .section__content{
   display: grid;
   gap: var(--chapter-gap);
 
@@ -82,50 +126,19 @@ html, body {
     "story code css";
 }
 
-/* panel look */
-.section--chapter .panel {
-  border: var(--border-width) solid var(--text-primary);
-  background: var(--surface-primary);
-  padding: var(--space-32);
+/* map existing HTML order to the grid areas (ONLY chapter 1 now) */
+#chapter-1 .panel:nth-child(1){ grid-area: big; }
+#chapter-1 .panel:nth-child(2){ grid-area: web1; }
+#chapter-1 .panel:nth-child(3){ grid-area: web2; }
+#chapter-1 .panel:nth-child(4){ grid-area: code; }
+#chapter-1 .panel:nth-child(5){ grid-area: css; }
+#chapter-1 .panel:nth-child(6){ grid-area: story; }
 
-  /* centers text inside each panel */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 
-/* typography inside panels */
-.section--chapter h2 {
-  font-size: clamp(28px, 3.2vw, 44px);
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  line-height: 1.05;
-  color: var(--text-primary);
-}
 
-.section--chapter h4 {
-  font-size: clamp(18px, 2vw, 26px);
-  font-weight: 600;
-  line-height: 1.2;
-  color: var(--text-primary);
-}
 
-.section--chapter h5 {
-  font-size: clamp(14px, 1.6vw, 18px);
-  font-weight: 500;
-  line-height: 1.35;
-  color: var(--text-primary);
-}
 
-/* map existing HTML order to the grid areas */
-.section--chapter .panel:nth-child(1){ grid-area: big; }
-.section--chapter .panel:nth-child(2){ grid-area: web1; }
-.section--chapter .panel:nth-child(3){ grid-area: web2; }
-.section--chapter .panel:nth-child(4){ grid-area: code; }
-.section--chapter .panel:nth-child(5){ grid-area: css; }
-.section--chapter .panel:nth-child(6){ grid-area: story; }
+
 
 
 
@@ -273,6 +286,7 @@ html, body {
   transform-origin: center;
   align-self: center;
   justify-self: stretch;
+  margin-bottom: var(--space-64);
 }
 
 #chapter-3 .panel:nth-child(1) h2{
@@ -336,6 +350,7 @@ html, body {
   align-items: center;
   text-align: center;
   gap: var(--space-24);
+  margin-top: var(--space-64);
 }
 
 /* Place the 3 h4s roughly like the screenshot */
@@ -438,6 +453,7 @@ html, body {
 #chapter-4 .panel:nth-child(7) {
   grid-column: 3 / 11;
   grid-row: 5;
+  margin-top: var(--space-96);
 }
 
 /* 8) Big final panel */
@@ -518,7 +534,8 @@ html, body {
 #chapter-5{
   background: var(--neutrals__neutral60); /* or neutral80 if you want darker */
   padding: var(--space-32) 0;
-  padding-bottom: var(--space-128);
+  --chapter-bottom-pad: var(--space-128);
+  padding: var(--space-128) 0 var(--chapter-bottom-pad);
 }
 
 #chapter-5 .section__content{
@@ -705,4 +722,63 @@ html, body {
   grid-row: 5;
   justify-self: center;
   width: min(520px, 100%);
+}
+
+
+/* ==============================
+   CHAPTER 7 — WRAP-UP GRID
+   ============================== */
+
+/* CHAPTER 7 must override the global grid-area system */
+#chapter-7 .section__content{
+  grid-template-areas: none; /* kill the big/web1/etc layout */
+}
+
+#chapter-7 .panel{
+  grid-area: auto; /* remove any inherited grid-area assignments */
+}
+
+#chapter-7 .section__content{
+  --gap: var(--space-24);
+
+  display: grid;
+  gap: var(--gap);
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:
+    clamp(160px, 22vw, 220px)
+    clamp(160px, 22vw, 220px)
+    auto;
+
+  grid-template-areas: none;
+}
+
+#chapter-7 .panel{ grid-area: auto; }
+
+/* top row (1–3) */
+#chapter-7 .panel:nth-child(1){ grid-column: 1; grid-row: 1; }
+#chapter-7 .panel:nth-child(2){ grid-column: 2; grid-row: 1; }
+#chapter-7 .panel:nth-child(3){ grid-column: 3; grid-row: 1; }
+
+/* second row (4–6) */
+#chapter-7 .panel:nth-child(4){ grid-column: 1; grid-row: 2; }
+#chapter-7 .panel:nth-child(5){ grid-column: 2; grid-row: 2; }
+#chapter-7 .panel:nth-child(6){ grid-column: 3; grid-row: 2; }
+
+/* headline (7) */
+#chapter-7 .panel:nth-child(7){
+  grid-column: 1 / -1;
+  grid-row: 3;
+
+  border: none;
+  background: transparent;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin-top: var(--space-128);
+  min-height: clamp(220px, 38vw, 420px);
 }
